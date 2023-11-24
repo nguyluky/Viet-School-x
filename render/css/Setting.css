@@ -1,0 +1,261 @@
+.setting-main {
+    height: calc(100% - 6px);
+    width: calc(100% - 12px);
+    margin: 0px 6px 6px;
+    display: flex;
+}
+
+.setting-list {
+    width: 300px;
+    border-radius: var(--border-radius);
+
+    background: var(--background-slide-bar);
+    display: flex;
+    align-items: center;
+}
+
+.setting-content {
+    width: 100%;
+    border-radius: var(--border-radius);
+
+    margin-left: 6px;
+    height: 100%;
+    /* display: flex; */
+    flex-direction: row-reverse;
+    align-items: center;
+    background: var(--background-content);
+}
+
+.setting-close-button {
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    font-size: 35px;
+    /* font-weight: bold; */
+}
+
+.setingview {
+    width: 50%;
+    aspect-ratio: 16/9;
+    margin: 6px;
+    border-radius: var(--border-radius);
+
+    background-color: red;
+}
+
+.setting-edit {
+    height: 60%;
+    width: 50%;
+}
+
+.appsetting {
+    height: 100%;
+    width: calc(100% - 20px);
+    margin-left: 20px;
+}
+
+.appsetting-header {
+    display: flex;
+    height: 230px;
+}
+
+.appsetting-icon-check-update img {
+    height: 100px;
+
+}
+.appsetting-icon-check-update > .logo {
+    display: flex;
+    align-items: center;
+}
+
+.animate__animated {
+    font-size: 60px;
+    font-weight: 900;
+    font-family: "Buckin-Regular";
+}
+
+h2.animate__animated span.logoViet {
+    color: #d42a2a;
+    font-family: inherit;
+}
+
+h2.animate__animated span.logoSchool {
+    color: #186c79;
+    font-family: inherit;
+}
+
+h2.animate__animated > p {
+    font-size: 13px;
+    margin-top: -4px;
+    margin-left: 5px;
+    font-family: sans-serif;
+    font-weight: normal;
+    color: gray;
+}
+
+.appsetting {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.appsetting-update-button {
+    height: 30px;
+    border-radius: var(--border-radius);
+
+    background: #23A55A;
+    width: 100px;
+    margin-left: 88px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.appsetting-icon-check-update {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(50% + 5px);
+}
+
+.appsetting-community {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.appsetting-community-li {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.appsetting-community-li ion-icon {
+    font-size: 23px;
+    margin-right: 5px;
+}
+
+.appsetting-community-li .appsetting-community-li-body p:nth-child(2) {
+    font-size: small;
+    color: gray;
+}
+
+.appsetting > h2 {
+    font-weight: 600;
+}
+
+.appsetting-li {
+    margin: 20px 50px 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.appsetting-li .appsetting-li-left p:nth-child(2) {
+    font-size: small;
+    color: gray;
+}
+
+.switchbutton {
+    cursor: pointer;
+    height: 20px;
+    aspect-ratio: 2/1;
+    border-radius: 12.5px;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.switchbutton label {
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: relative;
+    background: var(--background-main);
+}
+
+.switchbutton > input {
+    display: none;
+}
+
+.switchbutton > label::after {
+    content: '';
+    background: var(--color-check);
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    transition: var(--time-animation);
+}
+
+.switchbutton > input:checked ~ 
+label::after {
+    opacity: 1;
+}
+
+
+.switchbutton > label::before {
+    content: '';
+    z-index: 2;
+    transition: var(--time-animation);
+    height: calc(100% - 8px);
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: #e2e2e2;
+    display: block;
+    position: absolute;
+    margin: 0 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+}
+
+.switchbutton > input:checked ~ label::before {
+    left: 50%;
+}
+
+.appsetting-li-button {
+    height: 28px;
+    width: fit-content;
+    border-radius: var(--border-radius);
+    background: var(--color-button);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.appsetting-li-button ion-icon {
+    margin-right: 5px;
+}
+
+.list-tab {
+    width: 100%;
+}
+
+.list-tab-li.on {
+    background: var(--color-check);
+}
+.list-tab-li {
+    margin-right: 10px;
+    display: flex;
+    height: 25px;
+    margin-left: 10px;
+    padding: 9px;
+    align-items: center;
+    border-radius: var(--border-radius);
+
+}
+
+.list-tab-li ion-icon {
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+
